@@ -8,23 +8,25 @@ import { Link } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div className = "demo-big-content" >
+      <div className="demo-big-content" >
         <Layout>
-          <Header title="Title" scroll>
+          <Header title="CarpeDev" scroll class="header">
             <Navigation>
+              <Link to="">Home</Link>
               <Link to="/resume">Resume</Link>
               <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Header>
-          <Drawer title="Title">
+          <Drawer title="CarpeDev">
             <Navigation>
+              <Link to="">Home</Link>
               <Link to="/resume">Resume</Link>
               <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/contact">Contact</Link>
-              </Navigation>
+            </Navigation>
           </Drawer>
           <Content>
             <div className="page-content" />
@@ -32,6 +34,7 @@ class App extends Component {
           </Content>
         </Layout>
       </div >
+
     );
   }
 }
